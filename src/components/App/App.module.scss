@@ -1,6 +1,9 @@
 .layout {
   border-radius: 8;
   overflow: hidden;
-  width: calc(50% - 8px);
-  max-width: calc(50% - 8px);
+  width: 100%;
+  background-color: var(--main-bg-color);
+}
+.layoutContent {
+  margin-inline: 2.5rem;
 }

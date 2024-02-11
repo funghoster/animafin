@@ -8,6 +8,11 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       token: {
         fontFamily: "Poppins",
       },
+      components: {
+        Layout: {
+          siderBg: "#25262d",
+        },
+      },
     }}
   >
     <App />

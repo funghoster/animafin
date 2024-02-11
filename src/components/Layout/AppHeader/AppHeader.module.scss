@@ -1,8 +1,23 @@
 .header {
   text-align: center;
-  color: #fff;
   height: 64;
-  padding-inline: 48;
+  padding-inline: 1.5rem;
   line-height: 64px;
-  background-color: #4096ff;
+  background-color: var(--main-bg-color);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.searchIcon {
+  margin-right: 1rem;
+}
+
+.avatar {
+  background-color: var(--second-bg-color);
+}
+
+.notification {
+  color: #fff;
+  font-size: 24px;
 }

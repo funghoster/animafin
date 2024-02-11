@@ -6,13 +6,15 @@ import AppSider from "../Layout/AppSider/AppSider";
 import AppContent from "../Layout/AppContent/AppContent";
 import AppFooter from "../Layout/AppFooter/AppFooter";
 
+import '../../assets/styles/variables.module.scss';
+
 
 
 const App = () => (
   <Flex gap="middle" wrap="wrap">
     <Layout className={style.layout}>
       <AppSider />
-      <Layout>
+      <Layout className={style.layoutContent}>
         <AppHeader />
         <AppContent />
         <AppFooter />
