@@ -60,6 +60,7 @@ const AppHeader = () => {
         size="large"
       >
         <Input
+          className={style.input}
           size="large"
           placeholder="Искать ..."
           prefix={<SearchOutlined className={style.searchIcon} />}

@@ -6,9 +6,8 @@ import AppSider from "../Layout/AppSider/AppSider";
 import AppContent from "../Layout/AppContent/AppContent";
 import AppFooter from "../Layout/AppFooter/AppFooter";
 
-import '../../assets/styles/variables.module.scss';
-
-
+import "../../assets/styles/variables.module.scss";
+import "../../assets/styles/mixins.module.scss";
 
 const App = () => (
   <Flex gap="middle" wrap="wrap">
