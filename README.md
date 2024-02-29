@@ -1,30 +1,109 @@
-# React + TypeScript + Vite
+# Руководство по работе с проектом
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Данный проект создан с помощью [Vite](https://github.com/vitejs/vite) ([русская документация](https://vite-docs-ru.vercel.app)).
 
-Currently, two official plugins are available:
+## Минимальные требования для работы над проектом:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Среда выполнения JS [Node.js](https://nodejs.org) >= v.18
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+node -v
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Пакетный менеджер [NPM](https://www.npmjs.com) >= v.9
+
+```bash
+npm -v
+```
+
+### Перед началом работы над проектом необходимо произвести установку зависимостей, описанных в файле `package.json`:
+
+```bash
+npm install
+```
+
+## Структура проекта
+
+### public
+
+Директория для размещения статичных ресурсов:
+
+```sh
+public/
+├── fonts/
+├── css/
+├── favicon/
+└── img/
+```
+
+### src
+
+В директории размещается исходный код проекта:
+
+```sh
+src/
+├── assets/
+│
+├── components/
+│
+├── hooks/
+│
+├── pages/
+│
+├── services/
+│
+├── shared/
+│   ├── constans/
+│   ├── types/
+│   └── utils/
+└── store/
+```
+
+## Сценарии
+
+После создания проекта вам доступны следующие сценарии.
+
+### Параллельный запуск клиентской и (серверной части приложения - еще нет)
+
+```bash
+npm start
+```
+
+### Запуск проекта в режиме development
+
+```bash
+npm run dev
+```
+
+### Сборка проекта для production
+
+```bash
+npm run build
+```
+
+### Запуск проекта в режиме production
+
+```bash
+npm run preview
+```
+
+### Проверка качества кода линтером ESLint
+
+```bash
+npm run lint
+```
+
+## Используемые технологии
+
+- [React](https://react.dev) - библиотека для создания пользовательских интерфейсов, использующая компонентный подход.
+- [React-Router](https://reactrouter.com/en/main) - библиотека для маршрутизации внутри приложения React.
+- [Redux Toolkit](https://redux-toolkit.js.org/tutorials/overview) - пакет, облегчающий работу с Redux. Для создания запросов на сервер будем использовать RTK Query, который по умолчанию включен в пакет Toolkit'а.
+- [Ant Design](https://ant.design) - библиотека готовых UI-компонентов.
+
+## API
+
+| Api             | Описание          |
+| --------------- | ----------------- |
+| `Эндпоинты ...` | Список эндпоинтов |
+
+Тут будет `body` для формы обратной связи
