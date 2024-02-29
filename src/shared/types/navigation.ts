@@ -1,4 +1,6 @@
 import React from "react";
+import { EMenuList } from "./navigationList/menu";
+import { ESocialList } from "./navigationList/social";
 
 export type enumList = EMenuList | ESocialList;
 export enum ENavList {
@@ -6,27 +8,15 @@ export enum ENavList {
   social,
 }
 
-export enum EMenuList {
-  home,
-  new,
-  history,
-}
-
-export enum ESocialList {
-  chat,
-  friends,
-  profile,
-}
-
 export interface IMenuItem<T> {
   id: T;
   description: string;
-  icon?: string;
+  icon?: string | React.ReactNode;
 }
 
-export interface IMenuGroup {
+export interface INavGroup {
   id: ENavList;
   title: string;
   items: IMenuItem<enumList>[];
-  icon?: string | React.FC;
+  icon?: string;
 }

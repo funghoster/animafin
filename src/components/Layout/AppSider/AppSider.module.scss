@@ -37,9 +37,10 @@
 .contentList {
   @include flexStart;
   li {
-    display: block;
+    display: flex;
     text-align: left;
     padding: 10px 8px;
+    gap: 8px;
   }
 }
 
