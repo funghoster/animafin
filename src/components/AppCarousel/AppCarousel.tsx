@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 const AppCarousel = () => {
   const [data, setData] = useState<IAnimeBlock[] | null>(null);
   useEffect(() => {
-    setTimeout(() => setData(animeList), 10000);
+    setTimeout(() => setData(animeList), 5000);
   }, []);
 
   if (!data) {
