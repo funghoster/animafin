@@ -4,6 +4,7 @@ import style from "./AppHeader.module.scss";
 import { AutoComplete, Avatar, Badge, Flex, Input, Layout } from "antd";
 import type { SelectProps } from "antd";
 import { BellOutlined, SearchOutlined, UserOutlined } from "@ant-design/icons";
+import { bgColor } from "../../../shared/constans/colors";
 
 const getRandomInt = (max: number, min = 0) =>
   Math.floor(Math.random() * (max - min + 1)) + min;
@@ -21,6 +22,7 @@ const searchResult = (query: string) =>
             style={{
               display: "flex",
               justifyContent: "space-between",
+              color: bgColor,
             }}
           >
             <span>
