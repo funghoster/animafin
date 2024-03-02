@@ -1,5 +1,31 @@
 .footer {
   text-align: center;
-  color: #fff;
-  background-color: #4096ff;
+  color: var(--second-color);
+  background-color: var(--bg-light-color);
+  height: min-content;
+  padding: 24px;
+}
+
+.logoImg {
+  width: 64px;
+  margin-bottom: 12px;
+}
+
+.paragraph {
+  opacity: 0.6;
+}
+
+.wrapper {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    top: -40%;
+    right: -100%;
+    background-size: 100%;
+    background-image: url("../../../assets/img/animegirl.png");
+    background-repeat: no-repeat;
+  }
 }

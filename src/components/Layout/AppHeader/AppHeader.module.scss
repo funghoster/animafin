@@ -8,9 +8,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: var(--bg-dark-color);
 }
 .searchIcon {
   margin-right: 1rem;
+  color: var(--bg-dark-color);
 }
 
 .avatar {
@@ -18,10 +20,11 @@
 }
 
 .notification {
-  color: #fff;
+  color: var(--second-color);
   font-size: 24px;
 }
 
 .input {
   font-weight: 400;
+  color: var(--bg-dark-color);
 }
