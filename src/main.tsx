@@ -16,6 +16,10 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         Layout: {
           siderBg: bgColor,
         },
+        Typography: {
+          titleMarginBottom: 0,
+          titleMarginTop: 0,
+        },
       },
     }}
   >
