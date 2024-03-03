@@ -93,6 +93,20 @@ npm run preview
 npm run lint
 ```
 
+## В проекте поддерживаются алиасы основных директорий:
+
+```sh
+src/
+├── assets/ = @assets/
+├── components/ = @components/
+├── hooks/ = @hooks/
+├── pages/ = @pages/
+├── routes/ = @routes/
+├── services/ = @services/
+├── shared/ = @shared/
+└── store/ = @store/
+```
+
 ## Используемые технологии
 
 - [React](https://react.dev) - библиотека для создания пользовательских интерфейсов, использующая компонентный подход.

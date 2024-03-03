@@ -1,7 +1,9 @@
 import { Col, Layout } from "antd";
-import style from "./AppFooter.module.scss";
-import imageUrl from "../../../assets/img/logo/logo.png";
 import Paragraph from "antd/es/typography/Paragraph";
+
+import imageUrl from "@assets/img/logo/logo.png";
+
+import style from "./AppFooter.module.scss";
 
 const AppFooter = () => {
   return (
