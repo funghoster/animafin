@@ -1,9 +1,11 @@
-import { IFullCardProps } from "./FullCard.type";
-import style from "./FullCard.module.scss";
-import Title from "antd/es/typography/Title";
 import { Button, ConfigProvider, Space, Tag } from "antd";
 import { DashboardOutlined, PlayCircleOutlined } from "@ant-design/icons";
+import Title from "antd/es/typography/Title";
 import Paragraph from "antd/es/typography/Paragraph";
+
+import { IFullCardProps } from "./FullCard.type";
+
+import style from "./FullCard.module.scss";
 
 const FullCard = ({ data }: IFullCardProps) => {
   return (
@@ -15,15 +17,14 @@ const FullCard = ({ data }: IFullCardProps) => {
         }}
       ></div>
       <div className={style.wrapperContent}>
-        <Title className={style.title}>
+        <Title level={2} className={style.title}>
           {data.name}
-
-          {data.subname ? (
-            <Title level={4} className={style.subtitle}>
-              {data.subname}
-            </Title>
-          ) : null}
         </Title>
+        {data.subname ? (
+          <Title level={4} className={style.subtitle}>
+            {data.subname}
+          </Title>
+        ) : null}
         <Space size={[0, 8]} wrap>
           <ConfigProvider
             theme={{

@@ -2,7 +2,6 @@ import ReactDOM from "react-dom/client";
 import App from "./components/App/App.tsx";
 import { ConfigProvider } from "antd";
 import { bgColor, textColor } from "./shared/constans/colors.ts";
-
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <ConfigProvider
     theme={{
