@@ -1,25 +1,10 @@
-import { Layout, Flex } from "antd";
+import "@assets/styles/variables.module.scss";
+import "@assets/styles/mixins.module.scss";
+import { RouterProvider } from "react-router-dom";
+import { router } from "@routes/router";
 
-import style from "./App.module.scss";
-import AppHeader from "../Layout/AppHeader/AppHeader";
-import AppSider from "../Layout/AppSider/AppSider";
-import AppContent from "../Layout/AppContent/AppContent";
-import AppFooter from "../Layout/AppFooter/AppFooter";
-
-import "../../assets/styles/variables.module.scss";
-import "../../assets/styles/mixins.module.scss";
-
-const App = () => (
-  <Flex gap="middle" wrap="wrap">
-    <Layout className={style.layout}>
-      <AppSider />
-      <Layout className={style.layoutContent}>
-        <AppHeader />
-        <AppContent />
-        <AppFooter />
-      </Layout>
-    </Layout>
-  </Flex>
-);
+const App = () => {
+  return <RouterProvider router={router} />;
+};
 
 export default App;

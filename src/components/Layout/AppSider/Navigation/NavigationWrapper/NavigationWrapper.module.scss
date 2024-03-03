@@ -1,0 +1,49 @@
+@mixin flexStart {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.navHeader {
+  display: block;
+  padding-left: 32px;
+  width: 100%;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.navList {
+  @include flexStart;
+  gap: 24px;
+  font-size: 16px;
+}
+
+.navItem {
+  @include flexStart;
+}
+
+.contentList {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.contentItem {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  a {
+    display: flex;
+    gap: 8px;
+    padding: 12px 8px 12px 32px;
+    height: 100%;
+    color: var(--main-color);
+    border: none;
+  }
+}

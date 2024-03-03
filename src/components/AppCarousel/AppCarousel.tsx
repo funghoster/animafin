@@ -1,8 +1,10 @@
+import { useEffect, useState } from "react";
 import { Carousel, ConfigProvider } from "antd";
-import style from "./AppCarousel.module.scss";
+
 import FullCard from "../Cards/FullCard/FullCard";
 import { IAnimeBlock, animeList } from "../Cards/constans/card";
-import { useEffect, useState } from "react";
+
+import style from "./AppCarousel.module.scss";
 
 const AppCarousel = () => {
   const [data, setData] = useState<IAnimeBlock[] | null>(null);

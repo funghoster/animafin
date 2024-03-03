@@ -1,14 +1,6 @@
-@mixin flexStart {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  width: 100%;
-}
 
 .sider {
   text-align: center;
-  padding: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,33 +15,4 @@
   border-bottom: 1px solid var(--main-color);
   opacity: 0.3;
   margin-bottom: 24px;
-}
-
-.navList {
-  @include flexStart;
-  gap: 24px;
-  font-size: 16px;
-  li {
-    @include flexStart;
-  }
-}
-
-.contentList {
-  @include flexStart;
-  li {
-    display: flex;
-    text-align: left;
-    padding: 10px 8px;
-    gap: 8px;
-  }
-}
-
-.navHeader {
-  display: block;
-  padding: 0 8px;
-  width: 100%;
-  font-weight: 700;
-  text-align: left;
-  margin-bottom: 12px;
-  font-size: 18px;
 }

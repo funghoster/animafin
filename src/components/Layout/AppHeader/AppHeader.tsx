@@ -1,10 +1,12 @@
 import { useState } from "react";
-import style from "./AppHeader.module.scss";
-
 import { AutoComplete, Avatar, Badge, Flex, Input, Layout } from "antd";
-import type { SelectProps } from "antd";
 import { BellOutlined, SearchOutlined, UserOutlined } from "@ant-design/icons";
-import { bgColor } from "../../../shared/constans/colors";
+
+import type { SelectProps } from "antd";
+
+import { bgColor } from "@shared/constans/colors";
+
+import style from "./AppHeader.module.scss";
 
 const getRandomInt = (max: number, min = 0) =>
   Math.floor(Math.random() * (max - min + 1)) + min;
