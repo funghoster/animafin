@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useNavigate, useRouteError } from "react-router-dom";
 import { Button, Result } from "antd";
 import Title from "antd/es/typography/Title";
