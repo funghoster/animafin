@@ -1,7 +1,8 @@
-import "@assets/styles/variables.module.scss";
-import "@assets/styles/mixins.module.scss";
 import { RouterProvider } from "react-router-dom";
 import { router } from "@routes/router";
+
+import "@assets/styles/_variables.scss";
+import "@assets/styles/_mixins.scss";
 
 const App = () => {
   return <RouterProvider router={router} />;
