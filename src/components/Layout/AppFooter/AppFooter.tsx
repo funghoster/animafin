@@ -8,8 +8,10 @@ import style from "./AppFooter.module.scss";
 const AppFooter = () => {
   return (
     <Layout.Footer className={style.footer}>
-      <Col span={8} offset={8} className={style.wrapper}>
-        <img src={imageUrl} alt="logo" className={style.logoImg} />
+      <Col span={8} offset={8}>
+        <div className={style.wrapperImg}>
+          <img src={imageUrl} alt="logo" className={style.logoImg} />
+        </div>
         <Paragraph className={style.paragraph}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus magnam
           facere, voluptates corrupti, a enim necessitatibus asperiores, eveniet

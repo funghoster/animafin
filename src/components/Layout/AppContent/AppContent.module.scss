@@ -1,6 +1,6 @@
 .content {
   text-align: center;
-  min-height: 120px;
+  height: 100%;
   line-height: 120px;
   color: #fff;
   background-color: var(--bg-dark-color);
@@ -10,10 +10,10 @@
 .layout {
   border-radius: 8;
   overflow: hidden;
-  width: 100%;
   background-color: var(--bg-dark-color);
   color: var(--second-color);
 }
 .layoutContent {
   background-color: var(--bg-dark-color);
+  width: 100%;
 }
