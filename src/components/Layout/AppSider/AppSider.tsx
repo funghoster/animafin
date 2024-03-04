@@ -7,9 +7,14 @@ import style from "./AppSider.module.scss";
 
 const AppSider = () => {
   return (
-    <Layout.Sider className={style.sider} width="17%">
+    <Layout.Sider className={style.sider} width={320}>
       <Col>
-        <img src={imageUrl} alt="logo" className={style.logoImg} />
+        <img
+          src={imageUrl}
+          alt="logo"
+          className={style.logoImg}
+          loading="lazy"
+        />
         <div className={style.divider}></div>
         <nav>
           <NavigationWrapper />
