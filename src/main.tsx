@@ -1,7 +1,11 @@
 import ReactDOM from "react-dom/client";
-import App from "./components/App/App.tsx";
 import { ConfigProvider } from "antd";
+
+import App from "./components/App/App.tsx";
 import { bgColor, textColor } from "./shared/constans/colors.ts";
+
+import "@assets/styles/_fonts.scss";
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <ConfigProvider
     theme={{
