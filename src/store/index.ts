@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import animeListSlice from "./animeListSlice";
+import globalSlice from "./globalSlice";
 
 const store = configureStore({
   reducer: {
     animeList: animeListSlice,
+    globalStore: globalSlice,
   },
 });
 

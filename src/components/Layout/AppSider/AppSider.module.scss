@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 12px 0;
 }
 
 .logoImg {
@@ -14,4 +15,21 @@
   border-bottom: 1px solid var(--main-color);
   opacity: 0.3;
   margin-bottom: 24px;
+}
+
+.button,
+.buttonActive {
+  width: 100%;
+  height: 48px;
+  color: --main-color;
+  background-color: var(--bg-light-color);
+  border: none;
+}
+
+.buttonActive {
+  width: 100%;
+}
+
+.buttonImg {
+  font-size: 24px;
 }

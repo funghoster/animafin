@@ -52,7 +52,9 @@ const AnimePage = () => {
         )}
       </div>
       <div className={style.wrapper}>
-        <CustomPlayer />
+        <div className={style.playerWrapper}>
+          <CustomPlayer />
+        </div>
         <div className={style.footer}>
           <Collapse
             size="large"
