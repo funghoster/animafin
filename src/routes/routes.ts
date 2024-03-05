@@ -6,6 +6,8 @@ const AppRoute = {
   chatPageRoute: "chat",
   friendsPageRoute: "friends",
   profilePageRoute: "profile",
+  animePagesRoute: "anime",
+  animePageRoute: "anime/:id",
 } as const;
 
 export default AppRoute;

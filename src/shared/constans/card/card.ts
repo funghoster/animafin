@@ -6,6 +6,8 @@ export interface IAnimeBlock {
   id: number | string;
   name: string;
   subname?: string;
+  slug: string;
+  season: string;
   originalName: string;
   description: string;
   genres: genresType[];
@@ -25,6 +27,8 @@ export const animeList: IAnimeBlock[] = [
     id: "1",
     name: "Атака титанов",
     subname: "Финал",
+    slug: "ataka-titanov",
+    season: "final",
     originalName: "Shingeki no kyojin",
     averageEpisode: 24,
     currentEpisodes: 24,
@@ -43,6 +47,8 @@ export const animeList: IAnimeBlock[] = [
     id: "2",
     name: "Атака титанов",
     subname: "Финал",
+    slug: "ataka-titanov",
+    season: "final",
     originalName: "Shingeki no kyojin",
     averageEpisode: 24,
     currentEpisodes: 24,
@@ -61,6 +67,8 @@ export const animeList: IAnimeBlock[] = [
     id: "3",
     name: "Атака титанов",
     subname: "Финал",
+    slug: "ataka-titanov",
+    season: "final",
     originalName: "Shingeki no kyojin",
     averageEpisode: 24,
     currentEpisodes: 24,

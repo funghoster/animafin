@@ -4,7 +4,7 @@ import {
   HomeOutlined,
   SearchOutlined,
 } from "@ant-design/icons";
-import AppRoute from "@shared/constans/routes";
+import AppRoute from "@routes/routes";
 import { INavigatonItem } from "@shared/types/navigation";
 export const menuList: INavigatonItem[] = [
   {

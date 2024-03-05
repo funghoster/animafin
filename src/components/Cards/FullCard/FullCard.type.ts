@@ -1,4 +1,4 @@
-import { IAnimeBlock } from "../constans/card";
+import { IAnimeBlock } from "../../../shared/constans/card/card";
 
 export interface IFullCardProps {
   data: IAnimeBlock;

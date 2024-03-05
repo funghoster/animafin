@@ -6,14 +6,13 @@
   padding: 24px;
   position: relative;
   &::after {
-    content: "";
+    content: url("../../../assets/img/animegirl.png");
     position: absolute;
     height: 400px;
-    width: 400px;
-    top: -10%;
-    right: -5%;
+    width: max-content;
+    bottom: 0;
+    right: 0;
     background-size: 100%;
-    background-image: url("../../../assets/img/animegirl.png");
     background-repeat: no-repeat;
   }
 }

@@ -2,12 +2,19 @@ import { Button, ConfigProvider, Space, Tag } from "antd";
 import { DashboardOutlined, PlayCircleOutlined } from "@ant-design/icons";
 import Title from "antd/es/typography/Title";
 import Paragraph from "antd/es/typography/Paragraph";
+import { useNavigate } from "react-router-dom";
 
 import { IFullCardProps } from "./FullCard.type";
 
 import style from "./FullCard.module.scss";
 
 const FullCard = ({ data }: IFullCardProps) => {
+  const navigate = useNavigate();
+
+  const handleNavigate = (to: string) => {
+    navigate(`anime/${to}`);
+  };
+
   return (
     <div className={style.wrapper}>
       <div
@@ -58,6 +65,7 @@ const FullCard = ({ data }: IFullCardProps) => {
           className={style.button}
           shape="round"
           icon={<PlayCircleOutlined />}
+          onClick={() => handleNavigate(data.slug)}
         >
           Смотреть
         </Button>

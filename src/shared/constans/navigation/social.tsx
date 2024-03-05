@@ -1,6 +1,6 @@
 import { MessageOutlined, TeamOutlined, UserOutlined } from "@ant-design/icons";
-import AppRoute from "../../../../../../shared/constans/routes";
-import { INavigatonItem } from "../../../../../../shared/types/navigation";
+import AppRoute from "../../../routes/routes";
+import { INavigatonItem } from "../../types/navigation";
 export const socialList: INavigatonItem[] = [
   {
     id: "chat",

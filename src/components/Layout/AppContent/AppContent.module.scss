@@ -1,5 +1,6 @@
 .content {
   text-align: center;
+  min-height: 800px;
   height: 100%;
   line-height: 120px;
   color: #fff;
@@ -9,7 +10,7 @@
 }
 .layout {
   border-radius: 8;
-  overflow: hidden;
+  overflow: visible;
   background-color: var(--bg-dark-color);
   color: var(--second-color);
 }

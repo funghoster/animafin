@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import AppContent from "../components/Layout/AppContent/AppContent";
-import AppRoute from "../shared/constans/routes";
+import AppRoute from "./routes";
 import * as Pages from "../pages/index";
 
 export const router = createBrowserRouter([
@@ -13,6 +13,16 @@ export const router = createBrowserRouter([
       {
         index: true,
         element: <Pages.MainPage />,
+        errorElement: <Pages.ErrorPage />,
+      },
+      {
+        path: AppRoute.animePagesRoute,
+        element: <Pages.NavigatePage to="/" />,
+        errorElement: <Pages.ErrorPage />,
+      },
+      {
+        path: AppRoute.animePageRoute,
+        element: <Pages.AnimePage />,
         errorElement: <Pages.ErrorPage />,
       },
       {

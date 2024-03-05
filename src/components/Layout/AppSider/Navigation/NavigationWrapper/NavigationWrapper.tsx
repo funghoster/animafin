@@ -1,5 +1,5 @@
-import { menuList } from "./constants/menu";
-import { socialList } from "./constants/social";
+import { menuList } from "../../../../../shared/constans/navigation/menu";
+import { socialList } from "../../../../../shared/constans/navigation/social";
 
 import NavigationItemWrapper from "../NavigationItemsWrapper/NavigationItemsWrapper";
 

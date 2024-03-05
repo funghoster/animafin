@@ -1,19 +1,13 @@
-import { useEffect, useState } from "react";
 import { Carousel, ConfigProvider } from "antd";
 
 import FullCard from "../Cards/FullCard/FullCard";
-import { IAnimeBlock, animeList } from "../Cards/constans/card";
+import IAppCarouselProps from "./AppCarousel.types";
+import Skeleton from "@components/Skeleton/Skeleton";
 
 import style from "./AppCarousel.module.scss";
-
-const AppCarousel = () => {
-  const [data, setData] = useState<IAnimeBlock[] | null>(null);
-  useEffect(() => {
-    setTimeout(() => setData(animeList), 5000);
-  }, []);
-
+const AppCarousel = ({ data }: IAppCarouselProps) => {
   if (!data) {
-    return <div className={style.skeleton}></div>;
+    return <Skeleton />;
   }
 
   return (
